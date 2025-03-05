@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import './BookingForm.css';
 
 const BookingForm = () => {
-  const { id } = useParams();  // Get doctor ID from URL
+  const { id } = useParams();  
   const [formData, setFormData] = useState({
     name: '',
     age: '',
