@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-// Example doctor data with photo URL and a description
+
 const doctors = [
   {
     id: 1,
@@ -76,7 +76,7 @@ const doctors = [
     fullDescription: "Dr. Reddy has helped many patients recover from complex surgeries, offering personalized care and rehabilitation advice to ensure the best outcomes for patients with musculoskeletal disorders.",
     photo: "https://static.vecteezy.com/system/resources/previews/034/780/002/original/medical-practitioner-icon-on-white-background-free-vector.jpg" // Placeholder for doctor's photo
   },
-  // Pediatrician doctors
+
   {
     id: 9,
     name: "Dr. M. Kumar, M.D",
