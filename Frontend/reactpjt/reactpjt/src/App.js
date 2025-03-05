@@ -1,4 +1,4 @@
-import React, { useState } from 'react';  // Import useState
+import React, { useState } from 'react';  
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';  // Import necessary components
 import './App.css';
 import Home from './Component/Home';
@@ -28,10 +28,10 @@ import DoctorDetails from './Component/DoctorDetails';
 const LazyAbout = React.lazy(() => import('./Component/About'));
 
 export default function App() {
-  // Authentication state managed in App.js
+
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
-  // Login function to simulate login
+
   const handleLogin = () => {
     setIsAuthenticated(true);
   };
