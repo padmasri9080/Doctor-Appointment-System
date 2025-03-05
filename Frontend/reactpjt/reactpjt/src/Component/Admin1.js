@@ -8,18 +8,18 @@ export default function Admin1() {
   const [specialization, setSpecialization] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [patients, setPatients] = useState([]); // Patients data
+  const [patients, setPatients] = useState([]); 
   const navigate = useNavigate();
 
   const handleLogin = () => {
     if (doctorName && specialization && email && password) {
-      // Login successful, fetch patient data from backend
+      
       axios
-        .get("http://localhost:3000/patients") // Get patient data
+        .get("http://localhost:3000/patients") 
         .then((response) => {
-          setPatients(response.data); // Set the patients data
+          setPatients(response.data);
           alert("Login Successful!");
-          navigate("/doctor-home"); // Redirect to doctor home page
+          navigate("/doctor-home"); 
         })
         .catch((err) => {
           alert("Error fetching patient details.");
